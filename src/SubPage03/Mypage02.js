@@ -1,3 +1,4 @@
+import './SubPage03.css';
 import styled from "styled-components";
 import Left from '../utill/Left';
 import RecHeader from '../Recommend/RecHeader';
@@ -9,9 +10,9 @@ const Mypage02 = () => {
 
     return(
         <Mypage02Wrap>
+            <RecHeader />
+            <Left />
             <div className='mp_02'>
-                <RecHeader />
-                <Left />
                 <Mypage02_main01>
                     <Mypage02_main01_img>
                         <ul>
@@ -59,9 +60,6 @@ const Mypage02Wrap = styled.div`
     height: auto;
     .RecHeader{
         padding-bottom: 0px;
-    }
-    @media screen and (min-width: 768px) {
-        padding-left:240px    
     }
 `
 

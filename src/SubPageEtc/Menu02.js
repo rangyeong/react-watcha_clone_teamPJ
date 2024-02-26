@@ -1,5 +1,4 @@
 import './Menu.css';
-import SearchHeader from './SearchHeader.js';
 import Left from '../utill/Left.js';
 
 import { useEffect, useState } from 'react';
@@ -73,8 +72,13 @@ const Menu02 = () => {
     return(
         <div className="Menu02">
             <Left />
-            <SearchHeader />
             <div className='m2_in'>
+                <div>
+                    <input
+                        type="text"
+                        placeholder="제목, 장르, 배우로 찾아보세요!"
+                    />
+                </div>
                 <div className='sc_bn'>
                     <div className='sc_title'>
                         <h1>이번 주 인기 영화</h1>
@@ -88,8 +92,7 @@ const Menu02 = () => {
                             }
                             />
                         </div>
-                        <div className='sc_name'>{movie.title || movie.name || movie.original_name}                        
-                        </div>
+                        <div className='sc_name'>{movie.title || movie.name || movie.original_name}                        </div>
                     </div>
                     <div className='sc_in'>
                         <div className='sc_img'>

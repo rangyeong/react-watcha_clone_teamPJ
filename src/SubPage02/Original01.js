@@ -80,8 +80,7 @@ const Original01 = () => {
                     </Ori01_main03_01>
                 </Original01wrap_main02>
                 <Original01wrap_main03>
-                    <img className="mo" src="/img/Original01_banner.png"/>
-                    <img className="pc" src="/img/nex_pcmain.png"/>
+                    <img src="/img/Original01_banner.png"/>
                 </Original01wrap_main03>
             </Original01wrap>
             {modalOpen && <Original04 setModalOpen={setModalOpen} />}
@@ -241,17 +240,6 @@ const Original01wrap_main03 = styled.div`
         width: 100%;
         height: auto;
         cursor: pointer;
-    }
-    .pc{
-        display: none;
-    }
-    @media screen and (min-width: 1024px) {
-        .pc{
-            display: block;
-        }  
-        .mo{
-            display: none;
-        } 
     }
 `
 const Ori01_arrow = styled.div`

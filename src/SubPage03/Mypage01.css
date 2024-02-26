@@ -1,13 +1,12 @@
 @charset "utf-8";
 
 .Mypage01, .Mypage04{
-    width: 100%;
-}
-.mp_all{
-    max-width: 1200px;
+    position: relative;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
+    white-space: nowrap;
+    background-color: #000;
 }
 .Mypage01 .RecHeader, .Mypage04 .RecHeader{
     padding-bottom: 0px;
@@ -57,22 +56,18 @@
 /* 프로필 영역 */
 .Mypage01 .mp_pro, .Mypage04 .mp_pro{
     position: absolute;
-    bottom: -95px;
+    bottom: -90px;
     left: 20px;
     display: flex;
-}
-.Mypage01 .mp_pro img, .Mypage04 .mp_pro img{
-    margin-top: 47px;
 }
 .Mypage01 .mp_pro .text, .Mypage04 .mp_pro .text{
     margin-left: 10px;
 }
 .Mypage01 .text .txt01, .Mypage04 .text .txt01{
-    width: 100px;
+    width: 70px;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #000;
 }
 .Mypage01 .text .txt02, .Mypage04 .text .txt02{
     padding: 5px 10px;
@@ -80,7 +75,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.4;
-    color: #000;
     background-color: rgba(255, 255, 255, 0.9);
 }
 .Mypage01 .text .txt03, .Mypage04 .text .txt03{
@@ -91,7 +85,6 @@
     font-size: 13px;
     line-height: 1.5;
     font-weight: 500;
-    color: #000;
 }
 .Mypage01 .text .txt04, .Mypage04 .text .txt04{
     margin-left: 20px;
@@ -101,11 +94,9 @@
 }
 .Mypage04 .txt05{
     position: absolute;
-    width: 100px;
-    top: 52%;
+    top: 58%;
     left: 112%;
     color: #fff;
-    font-size: 14px;
     background-color: #000;
     padding: 7px 15px;
     border-radius: 5px;
@@ -447,7 +438,7 @@
 
 
 @media screen and (min-width:768px){
-    .Mypage01, .Mypage04{
+    .mp_all{
         padding-left: 240px;
     }
     .my_03{
@@ -485,6 +476,11 @@
     
 }
 @media screen and (min-width:1024px){
+    .mp_all{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .Mypage01 .m4_text, .Mypage04 .m4_text{
         margin-top: 10%;
     }

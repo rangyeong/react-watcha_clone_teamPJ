@@ -34,9 +34,12 @@ const Original07 = () => {
     } ;
 
     return(
+        <Original07Wrap>
+            <Original07Logo>
+                <RecHeader />
+            </Original07Logo>
         <div className="Original07">
             <Left />
-            <RecHeader />
             <Original01wrap>
                 <Original01wrap_main>
                     <Main02Wrap>
@@ -100,18 +103,19 @@ const Original07 = () => {
                 <Original07_2 title='공포' id='HR' fetchUrl={requests.fetchHorrorMovies} />
                 <Original07_2 title='액션' id='AT' fetchUrl={requests.fetchActionMovies} />
             </div>
-        </div>
+        </div></Original07Wrap>
     )
 }
 
 export default Original07;
 
+const Original07Wrap = styled.div``;
 const Original01wrap = styled.div`
     width: 100%;
     height: auto;
     background-color: #000;
     @media screen and (min-width: 768px) {
-        padding-left:240px;  
+        padding-left:240px    
     }
 `
 const Original07Logo = styled.div`
