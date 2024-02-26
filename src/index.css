@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@charset "utf-8";
+/* index.css */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #121212;
+}
+ul, ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  vertical-align: top;
+}
+input{
+  vertical-align: top;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+button{
+  border: 0;
+  background-color: transparent;
+  vertical-align: top;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
 }
