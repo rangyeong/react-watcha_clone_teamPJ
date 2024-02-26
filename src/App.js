@@ -22,6 +22,7 @@ import Party from './SubPage04/Party.js';
 import Party03 from './SubPage04/Party03.js';
 import Rating from './SubPage05/Rating.js'
 import Click from './SubPage01/Click01.js'
+import firebase from './firebase.js'
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
                 <Route path='/party_play/:movieId' element={<Party03 />} />
           </Routes>
         <Layout/>
+        <firebase />
       </div>
     </BrowserRouter>
   );
